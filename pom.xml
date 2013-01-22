@@ -36,11 +36,262 @@
 
 
 	<dependencies>
+		<!-- API -->
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-i18n</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-asn1-api</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-asn1-ber</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+		<dependency	>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-ldap-client-api</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-ldap-codec-core</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-ldap-codec-standalone</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-ldap-net-mina</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-ldap-extras-aci</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-ldap-extras-codec</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-ldap-extras-codec-api</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-ldap-extras-sp</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-ldap-extras-trigger</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-ldap-extras-util</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-ldap-model</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-ldap-schema-data</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.api</groupId>
+			<artifactId>api-util</artifactId>
+			<version>${apacheds.api.version}</version>
+		</dependency>	
+<!-- 
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-all</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+-->
+		<!-- SHARED -->
+<!-- 
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-i18n</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-asn1-ber</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-asn1-api</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-dsml-engine</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-dsml-parser</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-integ</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-ldap-codec-core</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-ldap-model</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-ldap-schema-data</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-ldap-extras-aci</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-ldap-extras-codec</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-ldap-extras-codec-api</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-ldap-extras-sp</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-ldap-extras-util</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-ldap-net-mina</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.shared</groupId>
+			<artifactId>shared-util</artifactId>
+			<version>${apacheds.shared.version}</version>
+		</dependency>	
+-->
+		<!-- Server -->
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-core</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-core-api</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-core-jndi</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-server-config</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-core-shared</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.jdbm</groupId>
+			<artifactId>apacheds-jdbm2</artifactId>
+			<version>${apacheds.jdbm2.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-core-constants</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-core-avl</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-i18n</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-protocol-shared</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-jdbm-partition</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.apache.directory.server</groupId>
 			<artifactId>apacheds-server-jndi</artifactId>
 			<version>${apacheds.version}</version>
-		</dependency>
+		</dependency>	
+
 		<dependency>
 			<groupId>org.apache.directory.server</groupId>
 			<artifactId>apacheds-protocol-ntp</artifactId>
@@ -63,9 +314,143 @@
 		</dependency>
 		<dependency>
 			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-protocol-ldap</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-kerberos-codec</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
 			<artifactId>apacheds-interceptor-kerberos</artifactId>
 			<version>${apacheds.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-admin</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-authn</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-authz</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-changelog</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-collective</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-event</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-exception</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-journal</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-normalization</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-operational</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-referral</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-schema</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-subtree</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-trigger</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-interceptors-hash</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-jdbm-partition</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-xdbm-partition</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-ldif-partition</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-http-integration</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-http-directory-bridge</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-service-builder</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+
+<!-- 
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-xdbm-search</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.directory.server</groupId>
+			<artifactId>apacheds-xdbm-tools</artifactId>
+			<version>${apacheds.version}</version>
+		</dependency>	
+-->
 		<dependency>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.osgi.core</artifactId>
@@ -102,15 +487,20 @@
 			<plugin>
 				<groupId>org.apache.felix</groupId>
 				<artifactId>maven-bundle-plugin</artifactId>
-				<version>2.0.0</version>
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Export-Package>
-							jdbm.*;version=${project.version},
-							org.apache.directory.*;version=${project.version}
-						</Export-Package>
+						<Embed-Dependency>*;scope=compile;inline=true</Embed-Dependency>
+						<Embed-Transiative>true</Embed-Transiative>
+						<_exportcontents>
+							org.apache.directory.api.*;version=${apacheds.api.version},
+							org.apache.directory.ldap.*;version=${apacheds.api.version},
+							jdbm.*;version=${apacheds.jdbm2.version},
+							org.apache.directory.server.*;version=${apacheds.version}
+						</_exportcontents>
 						<Import-Package>
+							org.mortbay.jetty.*;resolution:=optional,
+							org.mortbay.xml.*;resolution:=optional,
 							org.bouncycastle*,
 							*
 						</Import-Package>
